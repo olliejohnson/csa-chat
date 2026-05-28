@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.netty:netty-codec-classes-quic:4.2.14.Final" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.netty" artifactId="netty-codec-classes-quic" version="4.2.14.Final" baseVersion="4.2.14.Final" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-classes-quic/4.2.14.Final/12f1d3572121132308226c6b09c08da59f88885b/netty-codec-classes-quic-4.2.14.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-classes-quic/4.2.14.Final/aa5c6de8d4a5d2bd626fb1998a9667a4de072d28/netty-codec-classes-quic-4.2.14.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.netty:netty-transport-sctp:4.2.14.Final" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.netty" artifactId="netty-transport-sctp" version="4.2.14.Final" baseVersion="4.2.14.Final" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-sctp/4.2.14.Final/64e012b2e35702c9fda9bcadf49be36248c85a64/netty-transport-sctp-4.2.14.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-sctp/4.2.14.Final/da44707c4af5d7bc8087779635b86533c0a12f59/netty-transport-sctp-4.2.14.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

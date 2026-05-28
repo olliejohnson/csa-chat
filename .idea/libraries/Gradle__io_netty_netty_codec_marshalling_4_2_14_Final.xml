@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.netty:netty-codec-marshalling:4.2.14.Final" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.netty" artifactId="netty-codec-marshalling" version="4.2.14.Final" baseVersion="4.2.14.Final" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-marshalling/4.2.14.Final/37927e0ba1ef0c68d7623a82f564ee14a55b98dc/netty-codec-marshalling-4.2.14.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-marshalling/4.2.14.Final/ae492d80a81c565be8f57c143588e23bf5785bb4/netty-codec-marshalling-4.2.14.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.mongodb:mongodb-hibernate:1.0.0-alpha0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.mongodb" artifactId="mongodb-hibernate" version="1.0.0-alpha0" baseVersion="1.0.0-alpha0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-hibernate/1.0.0-alpha0/8218ef1f6757ecd1f593316a2bb299a65c8234c5/mongodb-hibernate-1.0.0-alpha0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-hibernate/1.0.0-alpha0/ded40603986ead34eba997970e8bb2a9076b9f54/mongodb-hibernate-1.0.0-alpha0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
