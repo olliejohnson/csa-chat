@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.formdev/flatlaf/3.7.1/a71a3ddebe42fbfa8baeff1d6c0d955f2ce97cc9/flatlaf-3.7.1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.formdev/flatlaf/3.7.1/6624a372b57d63b8e4b2cca1041bd114136b89b2/flatlaf-3.7.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

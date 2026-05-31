@@ -11,15 +11,19 @@
         <constraints border-constraint="South"/>
         <properties/>
       </component>
-      <component id="89335" class="javax.swing.JLabel" binding="chatView">
-        <constraints border-constraint="West"/>
-        <properties>
-          <autoscrolls value="true"/>
-          <text value=""/>
-          <verticalAlignment value="1"/>
-          <verticalTextPosition value="1"/>
-        </properties>
-      </component>
+      <scrollpane id="43fdf" binding="scrollPane">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1bd8f" class="javax.swing.JTextArea" binding="chatBox">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
     </children>
   </grid>
 </form>

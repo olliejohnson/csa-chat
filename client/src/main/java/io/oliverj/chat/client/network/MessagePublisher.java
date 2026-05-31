@@ -2,6 +2,7 @@ package io.oliverj.chat.client.network;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 
 import java.nio.charset.StandardCharsets;
@@ -10,20 +11,20 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class MessagePublisher {
-    private static ChannelHandlerContext ctx;
+    private static Channel channel;
 
     private static final List<Consumer<String>> consumers = new ArrayList<>();
 
     private static String username = "";
 
     public static void init(ChannelHandlerContext ctx) {
-        MessagePublisher.ctx = ctx;
+        MessagePublisher.channel = ctx.channel();
     }
 
     public static void send(String msg) {
         ByteBuf buffer = Unpooled.buffer();
         buffer.writeCharSequence(username + ": " + msg, StandardCharsets.UTF_8);
-        ctx.writeAndFlush(buffer);
+        channel.writeAndFlush(buffer);
     }
 
     public static void systemMessage(String msg) {

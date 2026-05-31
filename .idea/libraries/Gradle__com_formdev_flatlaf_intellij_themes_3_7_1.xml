@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.formdev/flatlaf-intellij-themes/3.7.1/a3cda9f15ed96cc28c839ba74ea66951f4bc8954/flatlaf-intellij-themes-3.7.1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.formdev/flatlaf-intellij-themes/3.7.1/e4bff0264877bedb9f0ae78cb55d3295829df134/flatlaf-intellij-themes-3.7.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

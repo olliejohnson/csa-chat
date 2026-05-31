@@ -8,7 +8,8 @@ import java.awt.*;
 public class ChatScreen extends JFrame {
     private JPanel contentView;
     private JTextField messageBox;
-    private JLabel chatView;
+    private JTextArea chatBox;
+    private JScrollPane scrollPane;
 
     public ChatScreen() {
         setTitle("Chat App");
@@ -25,7 +26,7 @@ public class ChatScreen extends JFrame {
         });
 
         MessagePublisher.registerHandler(msg -> {
-            chatView.setText(chatView.getText() + "\n" + msg);
+            chatBox.setText(chatBox.getText() + msg + "\n");
         });
     }
 
@@ -48,12 +49,11 @@ public class ChatScreen extends JFrame {
         contentView.setLayout(new BorderLayout(0, 0));
         messageBox = new JTextField();
         contentView.add(messageBox, BorderLayout.SOUTH);
-        chatView = new JLabel();
-        chatView.setAutoscrolls(true);
-        chatView.setText("");
-        chatView.setVerticalAlignment(1);
-        chatView.setVerticalTextPosition(1);
-        contentView.add(chatView, BorderLayout.WEST);
+        scrollPane = new JScrollPane();
+        contentView.add(scrollPane, BorderLayout.CENTER);
+        chatBox = new JTextArea();
+        chatBox.setEditable(false);
+        scrollPane.setViewportView(chatBox);
     }
 
     /**

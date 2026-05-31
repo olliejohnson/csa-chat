@@ -7,7 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../client/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../client/src/test/resources" type="java-test-resource" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="temurin-21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="client.main" />
     <orderEntry type="module-library">
