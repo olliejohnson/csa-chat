@@ -7,6 +7,7 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    flatDir dirs: "${rootDir}/lib"
 }
 
 dependencies {
@@ -15,6 +16,10 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     implementation 'io.netty:netty-all:4.2.14.Final'
+    implementation 'com.formdev:flatlaf:3.7.1'
+    implementation 'com.formdev:flatlaf-intellij-themes:3.7.1'
+
+    implementation fileTree(dir: "${rootDir}/lib", include: "*.jar")
 }
 
 test {

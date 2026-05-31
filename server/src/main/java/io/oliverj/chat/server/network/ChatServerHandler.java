@@ -8,9 +8,7 @@ import io.netty.util.CharsetUtil;
 public class ChatServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        ByteBuf in = (ByteBuf) msg;
-        System.out.println("Server received: " + in.toString(CharsetUtil.UTF_8));
-        ctx.write(in);
+        ConnectionManager.getInstance().broadcast((ByteBuf) msg);
     }
 
     @Override
@@ -22,5 +20,10 @@ public class ChatServerHandler extends ChannelInboundHandlerAdapter {
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         cause.printStackTrace();
         ctx.close();
+    }
+
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        ConnectionManager.getInstance().connect(ctx);
     }
 }

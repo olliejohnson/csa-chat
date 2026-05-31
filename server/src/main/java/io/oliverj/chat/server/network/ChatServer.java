@@ -17,13 +17,12 @@ public class ChatServer {
                         @Override
                         protected void initChannel(Channel ch) {
                             ch.pipeline().addLast(new ChatServerHandler());
-                            ch.pipeline().addLast(new LoginHandler());
                             ch.pipeline().addLast(new DebugPrintHandler());
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)
                     .childOption(ChannelOption.SO_KEEPALIVE, true);
-            ChannelFuture f = b.bind(8080).sync();
+            ChannelFuture f = b.bind(1020).sync();
             f.channel().closeFuture().sync();
         } finally {
             workerGroup.shutdownGracefully();

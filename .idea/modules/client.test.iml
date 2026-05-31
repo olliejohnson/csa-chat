@@ -7,10 +7,21 @@
       <sourceFolder url="file://$MODULE_DIR$/../../client/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../client/src/test/resources" type="java-test-resource" />
     </content>
-    <orderEntry type="jdk" jdkName="temurin-21" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="client.main" />
+    <orderEntry type="module-library">
+      <library name="Gradle: forms_rt-13.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../client/lib/forms_rt-13.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: io.netty:netty-all:4.2.14.Final" level="project" />
+    <orderEntry type="library" name="Gradle: com.formdev:flatlaf:3.7.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.formdev:flatlaf-intellij-themes:3.7.1" level="project" />
     <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter:6.0.0" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-buffer:4.2.14.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-codec-base:4.2.14.Final" level="project" />
