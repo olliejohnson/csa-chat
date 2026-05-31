@@ -23,6 +23,7 @@ public class ChatScreen extends JFrame {
             String message = messageBox.getText();
 
             MessagePublisher.send(message);
+            messageBox.setText("");
         });
 
         MessagePublisher.registerHandler(msg -> chatBox.append(msg + "\n"));

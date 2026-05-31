@@ -20,6 +20,7 @@ public class MessagePublisher {
 
     public static void init(ChannelHandlerContext ctx) {
         MessagePublisher.channel = ctx.channel();
+        sendSystemMessage("%s connected to server".formatted(username));
         onInit.run();
     }
 
@@ -29,8 +30,10 @@ public class MessagePublisher {
         channel.writeAndFlush(buffer);
     }
 
-    public static void systemMessage(String msg) {
-        consumers.getFirst().accept(msg);
+    public static void sendSystemMessage(String msg) {
+        ByteBuf buffer = Unpooled.buffer();
+        buffer.writeCharSequence(msg, StandardCharsets.UTF_8);
+        channel.writeAndFlush(buffer);
     }
 
     public static void registerHandler(Consumer<String> messageConsumer) {
