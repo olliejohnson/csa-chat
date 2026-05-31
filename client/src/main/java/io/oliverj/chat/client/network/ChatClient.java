@@ -6,8 +6,19 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 public class ChatClient {
-    private String host;
-    private int port;
+    private final String host;
+    private final int port;
+
+    private static ChatClient INSTANCE;
+
+    public static void makeClient(String host, int port, String username) {
+        INSTANCE = new ChatClient(host, port);
+        MessagePublisher.setUsername(username);
+    }
+
+    public static ChatClient getClient() {
+        return INSTANCE;
+    }
 
     public ChatClient(String host, int port) {
         this.host = host;

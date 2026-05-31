@@ -42,14 +42,8 @@ public class ConnectDialog extends JDialog {
     }
 
     private void onOK() {
-        // add your code here
-        ChatClient client = new ChatClient(serverUrl.getText(), 1234);
-        try {
-            client.start();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        dispose();
+        ChatClient.makeClient(serverUrl.getText(), 1020, username.getText());
+        setVisible(false);
     }
 
     private void onCancel() {

@@ -51,6 +51,7 @@ public class ChatScreen extends JFrame {
         contentView.add(scrollPane, BorderLayout.CENTER);
         chatBox = new JTextArea();
         chatBox.setEditable(false);
+        chatBox.setFocusable(false);
         scrollPane.setViewportView(chatBox);
     }
 

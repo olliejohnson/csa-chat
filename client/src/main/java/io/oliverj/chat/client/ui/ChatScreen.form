@@ -20,6 +20,7 @@
             <constraints/>
             <properties>
               <editable value="false"/>
+              <focusable value="false"/>
             </properties>
           </component>
         </children>
