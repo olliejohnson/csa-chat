@@ -17,7 +17,7 @@ public class ChatServer {
                         @Override
                         protected void initChannel(Channel ch) {
                             ch.pipeline().addLast(new ChatServerHandler());
-                            ch.pipeline().addLast(new DebugPrintHandler());
+                            //ch.pipeline().addLast(new DebugPrintHandler());
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)
