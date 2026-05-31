@@ -9,7 +9,9 @@
     <children>
       <component id="2ef7b" class="javax.swing.JTextField" binding="messageBox">
         <constraints border-constraint="South"/>
-        <properties/>
+        <properties>
+          <enabled value="false"/>
+        </properties>
       </component>
       <scrollpane id="43fdf" binding="scrollPane">
         <constraints border-constraint="Center"/>

@@ -14,11 +14,13 @@ public class MessagePublisher {
     private static Channel channel;
 
     private static final List<Consumer<String>> consumers = new ArrayList<>();
+    private static Runnable onInit;
 
     private static String username = "";
 
     public static void init(ChannelHandlerContext ctx) {
         MessagePublisher.channel = ctx.channel();
+        onInit.run();
     }
 
     public static void send(String msg) {
@@ -42,5 +44,9 @@ public class MessagePublisher {
 
     public static void setUsername(String username) {
         MessagePublisher.username = username;
+    }
+
+    public static void onInit(Runnable callback) {
+        onInit = callback;
     }
 }
