@@ -2,6 +2,11 @@
 .gradle/
 build/
 
+client/.gradle
+client/build
+server/.gradle
+server/build
+
 # Java / IDE output
 bin/
 out/
