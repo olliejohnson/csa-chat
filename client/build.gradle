@@ -1,9 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group = 'io.oliverj.chat'
 version = '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'io.oliverj.chat.client.Application'
+}
 
 repositories {
     mavenCentral()

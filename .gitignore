@@ -1,0 +1,13 @@
+# Gradle
+.gradle/
+build/
+
+# Java / IDE output
+bin/
+out/
+
+# Editor
+.vscode/
+
+# OS
+.DS_Store
