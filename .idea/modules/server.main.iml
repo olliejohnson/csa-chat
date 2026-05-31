@@ -7,7 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../server/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../server/src/main/resources" type="java-resource" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="temurin-21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: io.netty:netty-all:4.2.14.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.mongodb:mongodb-hibernate:1.0.0-alpha0" level="project" />

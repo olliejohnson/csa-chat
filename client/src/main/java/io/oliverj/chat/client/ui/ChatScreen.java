@@ -26,6 +26,8 @@ public class ChatScreen extends JFrame {
         });
 
         MessagePublisher.registerHandler(msg -> chatBox.append(msg + "\n"));
+
+        MessagePublisher.onInit(() -> messageBox.setEnabled(true));
     }
 
     {
@@ -46,6 +48,7 @@ public class ChatScreen extends JFrame {
         contentView = new JPanel();
         contentView.setLayout(new BorderLayout(0, 0));
         messageBox = new JTextField();
+        messageBox.setEnabled(false);
         contentView.add(messageBox, BorderLayout.SOUTH);
         scrollPane = new JScrollPane();
         contentView.add(scrollPane, BorderLayout.CENTER);
