@@ -31,5 +31,6 @@ public class ConnectionManager {
 
     public void broadcast(ByteBuf msg) {
         clients.write(msg);
+        clients.flush();
     }
 }
