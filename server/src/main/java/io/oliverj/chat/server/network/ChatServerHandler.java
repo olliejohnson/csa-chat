@@ -26,4 +26,9 @@ public class ChatServerHandler extends ChannelInboundHandlerAdapter {
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         ConnectionManager.getInstance().connect(ctx);
     }
+
+    @Override
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+        ConnectionManager.getInstance().disconnect(ctx);
+    }
 }
